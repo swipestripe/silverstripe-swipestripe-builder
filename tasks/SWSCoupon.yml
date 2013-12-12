@@ -1,0 +1,10 @@
+# ------------------------------------------
+# Coupons
+# ------------------------------------------
+Coupon:
+	twentyPercent:
+		Title: Coupon
+		Code: 123
+		Discount: 20.00
+		Expiry: 2015-11-30
+		ShopConfigID: 1

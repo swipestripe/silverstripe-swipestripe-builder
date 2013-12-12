@@ -1,0 +1,11 @@
+# ------------------------------------------
+# Tax rates
+# ------------------------------------------
+FlatFeeTaxRate:
+	nzGST:
+		Title: GST
+		Description: GST (15%)
+		Rate: 15.00
+		ShopConfigID: 1
+		CountryID: 243
+

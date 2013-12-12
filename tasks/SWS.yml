@@ -1,0 +1,273 @@
+# ------------------------------------------
+# Products
+# ------------------------------------------
+Product:
+	gameOfThrones:
+		Title: Game Of Thrones
+		URLSegment: game-of-thrones
+		Price: 34.95
+		Currency: NZD
+		ExtraMeta: '{"ProductCategory":"fiction","Image":"assets/Uploads/game-of-thrones.jpg"}'
+	theHobbit:
+		Title: The Hobbit
+		URLSegment: the-hobbit
+		Price: 29.95
+		Currency: NZD
+		ExtraMeta: '{"ProductCategory":"fiction","Image":"assets/Uploads/the-hobbit.jpg"}'
+	proJavascript:
+		Title: Pro Javascript Techniques
+		URLSegment: pro-javascript
+		Price: 30.00
+		Currency: NZD
+		ExtraMeta: '{"ProductCategory":"non-fiction"}'
+	ssCMSBook:
+		Title: SilverStripe - The Complete Guide to CMS Development
+		URLSegment: silverstripe-cms-book
+		Price: 54.55
+		Currency: NZD
+		ExtraMeta: '{"ProductCategory":"non-fiction"}'
+	ssBook:
+		Title: SilverStripe 2.4 - Module Extensions Themes and Widgets
+		URLSegment: silverstripe-book
+		Price: 49.99
+		Currency: NZD
+		ExtraMeta: '{"ProductCategory":"non-fiction"}'
+	prefectionist:
+		Title: Prefectionist
+		URLSegment: prefectionist
+		Price: 65.99
+		Currency: NZD
+		ExtraMeta: '{"ProductCategory":"teeshirts"}'
+	stormTrooper:
+		Title: Storm Trooper
+		URLSegment: storm-trooper
+		Price: 68.99
+		Currency: NZD
+		ExtraMeta: '{"ProductCategory":"teeshirts"}'
+	martyHat:
+		Title: Back to the Future - Marty's hat
+		URLSegment: marty-hat
+		Price: 56.78
+		Currency: NZD
+		ExtraMeta: '{"ProductCategory":"hats"}'
+
+# ------------------------------------------
+# Product images
+# ------------------------------------------
+Image:
+	gameOfThrones:
+		Filename: assets/Uploads/game-of-thrones.jpg
+		ParentID: 1
+	theHobbit:
+		Filename: assets/Uploads/the-hobbit.jpg
+		ParentID: 1
+	proJavascript:
+		Filename: assets/Uploads/pro-javascript-techniques.jpg
+		ParentID: 1
+	ssCMSBook:
+		Filename: assets/Uploads/silverstripe-cms-book.png
+		ParentID: 1
+	ssBook:
+		Filename: assets/Uploads/silverstripe-book.jpg
+		ParentID: 1
+	prefectionist:
+		Filename: assets/Uploads/prefectionist.jpg
+		ParentID: 1
+	stormTrooper:
+		Filename: assets/Uploads/storm-trooper-tee.jpg
+		ParentID: 1
+	martyHat:
+		Filename: assets/Uploads/marty-hat.jpg
+		ParentID: 1
+
+# ------------------------------------------
+# Attributes
+# ------------------------------------------
+Attribute:
+	prefectionistSize:
+		Title: Size
+		Description: Size
+		Product: =>Product.prefectionist
+	prefectionistColour:
+		Title: Colour
+		Description: Colour
+		Product: =>Product.prefectionist
+	martyHatSize:
+		Title: Size
+		Description: Size
+		Product: =>Product.martyHat
+
+# ------------------------------------------
+# Options
+# ------------------------------------------ 
+Option:
+	prefectionistSmall:
+		Title: Small
+		Description: Small
+		AttributeID: =>Attribute.prefectionistSize
+		ProductID: =>Product.prefectionist
+	prefectionistMedium:
+		Title: Medium
+		Description: Medium
+		AttributeID: =>Attribute.prefectionistSize
+		ProductID: =>Product.prefectionist
+	prefectionistLarge:
+		Title: Large
+		Description: Large
+		AttributeID: =>Attribute.prefectionistSize
+		ProductID: =>Product.prefectionist
+	prefectionistRed:
+		Title: Red
+		Description: Red
+		AttributeID: =>Attribute.prefectionistColour
+		ProductID: =>Product.prefectionist
+	prefectionistPurple:
+		Title: Purple
+		Description: Purple
+		AttributeID: =>Attribute.prefectionistColour
+		ProductID: =>Product.prefectionist
+	martyHat7:
+		Title: 7
+		Description: 7
+		AttributeID: =>Attribute.martyHatSize
+		ProductID: =>Product.martyHat
+	martyHat718:
+		Title: 7 1/8
+		Description: 7 1/8
+		AttributeID: =>Attribute.martyHatSize
+		ProductID: =>Product.martyHat
+	martyHat714:
+		Title: 7 1/4
+		Description: 7 1/4
+		AttributeID: =>Attribute.martyHatSize
+		ProductID: =>Product.martyHat
+	martyHat738:
+		Title: 7 3/8
+		Description: 7 3/8
+		AttributeID: =>Attribute.martyHatSize
+		ProductID: =>Product.martyHat
+
+# ------------------------------------------
+# Product Variations
+# ------------------------------------------ 
+Variation:
+	prefectionistSmallRed:
+		ProductID: =>Product.prefectionist
+		Currency: NZD
+		Price: 0.00
+	prefectionistSmallPurple:
+		ProductID: =>Product.prefectionist
+		Currency: NZD
+		Price: 0.00
+	prefectionistLargePurple:
+		ProductID: =>Product.prefectionist
+		Currency: NZD
+		Price: 1.50
+	martyHat7:
+		ProductID: =>Product.martyHat
+		Currency: NZD
+		Price: 0.00
+	martyHat718:
+		ProductID: =>Product.martyHat
+		Currency: NZD
+		Price: 0.00
+	martyHat714:
+		ProductID: =>Product.martyHat
+		Currency: NZD
+		Price: 0.50
+	martyHat738:
+		ProductID: =>Product.martyHat
+		Currency: NZD
+		Price: 2.00
+
+# ------------------------------------------
+# Variation options
+# ------------------------------------------ 
+Variation_Options:
+	prefectionistSmallRed_Small:
+		VariationID: =>Variation.prefectionistSmallRed
+		OptionID: =>Option.prefectionistSmall
+	prefectionistSmallRed_Red:
+		VariationID: =>Variation.prefectionistSmallRed
+		OptionID: =>Option.prefectionistRed
+	prefectionistSmallPurple_Small:
+		VariationID: =>Variation.prefectionistSmallPurple
+		OptionID: =>Option.prefectionistSmall
+	prefectionistSmallPurple_Purple:
+		VariationID: =>Variation.prefectionistSmallPurple
+		OptionID: =>Option.prefectionistPurple
+	prefectionistLargePurple_Large:
+		VariationID: =>Variation.prefectionistLargePurple
+		OptionID: =>Option.prefectionistLarge
+	prefectionistLargePurple_Purple:
+		VariationID: =>Variation.prefectionistLargePurple
+		OptionID: =>Option.prefectionistPurple
+	martyHat7:
+		VariationID: =>Variation.martyHat7
+		OptionID: =>Option.martyHat7
+	martyHat718:
+		VariationID: =>Variation.martyHat718
+		OptionID: =>Option.martyHat718
+	martyHat714:
+		VariationID: =>Variation.martyHat714
+		OptionID: =>Option.martyHat714
+	martyHat738:
+		VariationID: =>Variation.martyHat738
+		OptionID: =>Option.martyHat738
+
+# ------------------------------------------
+# Groups
+# ------------------------------------------
+Group:
+	admin:
+		Title: Administrators
+	customers:
+		Title: Customers
+		Code: customers
+
+# ------------------------------------------
+# Members
+# ------------------------------------------     
+Member:
+	admin:
+		FirstName: Admin
+		Surname: Admin
+		Email: admin@test.com
+		Password: password
+		Groups: =>Group.admin
+
+# ------------------------------------------
+# Customers
+# ------------------------------------------ 
+Customer:
+	frank:
+		FirstName: Frank
+		Surname: Mullenger
+		Email: frank@swipestripe.com
+		Password: password
+		Groups: =>Group.customers
+
+# ------------------------------------------
+# Permissions
+# ------------------------------------------      
+Permission:
+	admin:
+		Code: ADMIN
+		GroupID: =>Group.admin
+	viewOrder:
+		Code: VIEW_ORDER
+		GroupID: =>Group.customers
+
+# ------------------------------------------
+# Shipping Countries
+# ------------------------------------------ 
+Country_Shipping:
+	newZealand:
+		Code: NZ
+		Title: New Zealand
+		ShopConfigID: 1
+	australia:
+		Code: AU
+		Title: Australia
+		ShopConfigID: 1
+

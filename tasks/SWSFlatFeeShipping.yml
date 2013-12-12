@@ -1,0 +1,23 @@
+# ------------------------------------------
+# Shipping rates
+# ------------------------------------------
+FlatFeeShippingRate:
+	nzCourier:
+		Title: Shipping to New Zealand
+		Description: Courier Post (1-3 days)
+		Price: 10.00
+		ShopConfigID: 1
+		CountryID: 243
+	nzFast:
+		Title: Shipping to New Zealand
+		Description: Fast Post (1-2 days)
+		Price: 15.00
+		ShopConfigID: 1
+		CountryID: 243
+	au:
+		Title: Shipping to Australia
+		Description: Standard Post (4-5 days)
+		Price: 20.00
+		ShopConfigID: 1
+		CountryID: 244
+

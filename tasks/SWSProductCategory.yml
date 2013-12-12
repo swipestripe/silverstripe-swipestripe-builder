@@ -1,0 +1,28 @@
+# ------------------------------------------
+# Product categories
+# ------------------------------------------
+ProductCategory:
+	books:
+		Title: Books
+		URLSegment: books
+		ParentID: 0
+	nonFiction:
+		Title: Non Fiction
+		URLSegment: non-fiction
+		ParentID: =>ProductCategory.books
+	fiction:
+		Title: Fiction
+		URLSegment: fiction
+		ParentID: =>ProductCategory.books
+	clothing:
+		Title: Clothing
+		URLSegment: clothing
+		ParentID: 0
+	teeshirts:
+		Title: Teeshirts
+		URLSegment: teeshirts
+		ParentID: =>ProductCategory.clothing
+	hats:
+		Title: Hats
+		URLSegment: hats
+		ParentID: =>ProductCategory.clothing

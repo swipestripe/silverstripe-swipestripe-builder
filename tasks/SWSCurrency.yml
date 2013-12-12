@@ -1,0 +1,28 @@
+# ------------------------------------------
+# Exchange rates
+# ------------------------------------------
+ExchangeRate:
+	nzd:
+		Title: New Zealand Dollars
+		BaseCurrency: NZD
+		BaseCurrencySymbol: $
+		Currency: NZD
+		CurrencySymbol: $
+		Rate: 1.0000
+		ShopConfigID: 1
+	gbp:
+		Title: Great British Pounds
+		BaseCurrency: NZD
+		BaseCurrencySymbol: $
+		Currency: GBP
+		CurrencySymbol: £
+		Rate: 0.5122
+		ShopConfigID: 1
+	usd:
+		Title: US Dollars
+		BaseCurrency: NZD
+		BaseCurrencySymbol: $
+		Currency: USD
+		CurrencySymbol: $
+		Rate: 0.8184
+		ShopConfigID: 1
