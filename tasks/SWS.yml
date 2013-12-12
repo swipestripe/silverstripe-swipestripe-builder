@@ -19,37 +19,37 @@ Product:
 		URLSegment: pro-javascript
 		Price: 30.00
 		Currency: NZD
-		ExtraMeta: '{"ProductCategory":"non-fiction"}'
+		ExtraMeta: '{"ProductCategory":"non-fiction","Image":"assets/Uploads/pro-javascript-techniques.jpg"}'
 	ssCMSBook:
 		Title: SilverStripe - The Complete Guide to CMS Development
 		URLSegment: silverstripe-cms-book
 		Price: 54.55
 		Currency: NZD
-		ExtraMeta: '{"ProductCategory":"non-fiction"}'
+		ExtraMeta: '{"ProductCategory":"non-fiction","Image":"assets/Uploads/silverstripe-cms-book.png"}'
 	ssBook:
 		Title: SilverStripe 2.4 - Module Extensions Themes and Widgets
 		URLSegment: silverstripe-book
 		Price: 49.99
 		Currency: NZD
-		ExtraMeta: '{"ProductCategory":"non-fiction"}'
+		ExtraMeta: '{"ProductCategory":"non-fiction","Image":"assets/Uploads/silverstripe-book.jpg"}'
 	prefectionist:
 		Title: Prefectionist
 		URLSegment: prefectionist
 		Price: 65.99
 		Currency: NZD
-		ExtraMeta: '{"ProductCategory":"teeshirts"}'
+		ExtraMeta: '{"ProductCategory":"teeshirts","Image":"assets/Uploads/prefectionist.jpg"}'
 	stormTrooper:
 		Title: Storm Trooper
 		URLSegment: storm-trooper
 		Price: 68.99
 		Currency: NZD
-		ExtraMeta: '{"ProductCategory":"teeshirts"}'
+		ExtraMeta: '{"ProductCategory":"teeshirts","Image":"assets/Uploads/storm-trooper-tee.jpg"}'
 	martyHat:
 		Title: Back to the Future - Marty's hat
 		URLSegment: marty-hat
 		Price: 56.78
 		Currency: NZD
-		ExtraMeta: '{"ProductCategory":"hats"}'
+		ExtraMeta: '{"ProductCategory":"hats"},"Image":"assets/Uploads/marty-hat.jpg"'
 
 # ------------------------------------------
 # Product images
