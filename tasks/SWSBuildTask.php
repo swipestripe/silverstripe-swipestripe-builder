@@ -57,8 +57,6 @@ class SWSBuildTask extends BuildTask {
 		$config->NotificationTo = 'info@swipestripe.com';
 		$config->write();
 
-		$this->createProductImages();
-
 		// Populate flat fee shipping rates
 		$this->createShippingRates();
 
@@ -186,6 +184,7 @@ class SWSBuildTask extends BuildTask {
 						}
 					}
 				}
+				$product->doPublish();
 			}
 		}
 	}

@@ -45,11 +45,11 @@ Product:
 		Currency: NZD
 		ExtraMeta: '{"ProductCategory":"teeshirts","Image":"assets/Uploads/storm-trooper-tee.jpg"}'
 	martyHat:
-		Title: Back to the Future - Marty's hat
+		Title: Back to the Future - Martys hat
 		URLSegment: marty-hat
 		Price: 56.78
 		Currency: NZD
-		ExtraMeta: '{"ProductCategory":"hats"},"Image":"assets/Uploads/marty-hat.jpg"'
+		ExtraMeta: '{"ProductCategory":"hats","Image":"assets/Uploads/marty-hat.jpg"}'
 
 # ------------------------------------------
 # Product images
