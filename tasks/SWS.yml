@@ -216,16 +216,6 @@ Variation_Options:
 		OptionID: =>Option.martyHat738
 
 # ------------------------------------------
-# Groups
-# ------------------------------------------
-Group:
-	admin:
-		Title: Administrators
-	customers:
-		Title: Customers
-		Code: customers
-
-# ------------------------------------------
 # Members
 # ------------------------------------------     
 Member:
@@ -234,29 +224,11 @@ Member:
 		Surname: Admin
 		Email: admin@test.com
 		Password: password
-		Groups: =>Group.admin
-
-# ------------------------------------------
-# Customers
-# ------------------------------------------ 
-Customer:
 	frank:
 		FirstName: Frank
 		Surname: Mullenger
 		Email: frank@swipestripe.com
 		Password: password
-		Groups: =>Group.customers
-
-# ------------------------------------------
-# Permissions
-# ------------------------------------------      
-Permission:
-	admin:
-		Code: ADMIN
-		GroupID: =>Group.admin
-	viewOrder:
-		Code: VIEW_ORDER
-		GroupID: =>Group.customers
 
 # ------------------------------------------
 # Shipping Countries
