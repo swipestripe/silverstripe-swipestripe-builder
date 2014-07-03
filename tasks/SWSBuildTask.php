@@ -57,6 +57,9 @@ class SWSBuildTask extends BuildTask {
 		$config->NotificationTo = 'info@swipestripe.com';
 		$config->write();
 
+		// Update members
+		$this->createMembers();
+
 		// Populate flat fee shipping rates
 		$this->createShippingRates();
 
@@ -90,6 +93,22 @@ class SWSBuildTask extends BuildTask {
 
 			$page->ClassName = 'HomePage';
 			$page->doPublish();
+		}
+	}
+
+	private function createMembers() {
+		$admin = Member::get()
+			->filter(array('Email' => 'admin@test.com'))
+			->first();
+		if ($admin && $admin->exists()) {
+			$admin->addToGroupByCode('administrators');
+		}
+
+		$customer = Member::get()
+			->filter(array('Email' => 'frank@swipestripe.com'))
+			->first();
+		if ($customer && $customer->exists()) {
+			$customer->addToGroupByCode('customers');
 		}
 	}
 
